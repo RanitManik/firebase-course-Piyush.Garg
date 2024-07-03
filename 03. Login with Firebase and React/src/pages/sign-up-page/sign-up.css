@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientBorder {
+  0% {
+    border-image-source: linear-gradient(45deg, #ff6ec4, #7873f5);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #7873f5, #4facfe);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #4facfe, #ff6ec4);
+  }
+}
+
+.signup-page {
+  background-color: #3a3a3a;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, #ff6ec4, #7873f5);
+  animation:
+    fadeIn 0.8s ease-in-out,
+    gradientBorder 2s infinite;
+}
+
+.signup-page label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.signup-page input[type="email"],
+.signup-page input[type="password"] {
+  font-size: 18px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #b9b9b9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  caret-color: #007bff;
+  color: black;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.signup-page input[type="email"]:focus,
+.signup-page input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
