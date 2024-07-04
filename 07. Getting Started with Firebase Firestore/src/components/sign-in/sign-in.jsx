@@ -11,7 +11,7 @@ const SignIn = () => {
     await firebase.logInWithEmailAndPassword(email, password);
 
   return (
-    <div className="sign-up-page">
+    <div className="sign-in-page">
       <h2>Sign in Page</h2>
       <label htmlFor="sign-in-email"></label>
       <input

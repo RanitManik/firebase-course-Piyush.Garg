@@ -20,7 +20,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="signup-page">
+    <div className="sign-up-page">
       <h2>Sign up Page</h2>
       <label htmlFor="email"></label>
       <input

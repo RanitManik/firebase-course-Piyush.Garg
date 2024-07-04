@@ -1,4 +1,5 @@
-.sign-up-page {
+.sign-up-page,
+.sign-in-page {
   background-color: #3a3a3a;
   padding: 40px;
   border-radius: 8px;
@@ -36,4 +37,13 @@ input:focus {
   border-color: #007bff;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: 5px solid #797979;
+  margin-top: 1rem;
 }

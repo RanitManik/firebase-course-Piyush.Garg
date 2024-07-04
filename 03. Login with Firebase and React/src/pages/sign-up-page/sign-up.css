@@ -21,7 +21,7 @@
   }
 }
 
-.signup-page {
+.sign-up-page {
   background-color: #3a3a3a;
   padding: 40px;
   border-radius: 8px;
@@ -35,14 +35,14 @@
     gradientBorder 2s infinite;
 }
 
-.signup-page label {
+.sign-up-page label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
 
-.signup-page input[type="email"],
-.signup-page input[type="password"] {
+.sign-up-page input[type="email"],
+.sign-up-page input[type="password"] {
   font-size: 18px;
   width: 100%;
   padding: 12px;
@@ -56,8 +56,8 @@
   animation: fadeIn 0.8s ease-in-out;
 }
 
-.signup-page input[type="email"]:focus,
-.signup-page input[type="password"]:focus {
+.sign-up-page input[type="email"]:focus,
+.sign-up-page input[type="password"]:focus {
   border-color: #007bff;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);

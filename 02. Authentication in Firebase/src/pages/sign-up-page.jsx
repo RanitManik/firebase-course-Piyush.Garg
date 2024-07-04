@@ -18,7 +18,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="signup-page">
+    <div className="sign-up-page">
       <label htmlFor="email"></label>
       <input
         onChange={(e) => setEmail(e.target.value)}
