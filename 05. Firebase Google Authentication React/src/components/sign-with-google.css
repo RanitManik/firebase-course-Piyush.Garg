@@ -1,0 +1,6 @@
+.sign-with-google {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  animation: fadeIn 0.8s ease-in-out;
+}
