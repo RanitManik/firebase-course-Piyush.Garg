@@ -36,7 +36,7 @@ export const FirebaseProvider = ({ children }) => {
   const logInWithEmailAndPassword = (email, password) =>
     signInWithEmailAndPassword(firebaseAuth, email, password);
 
-  const putData = (data, key) => set(ref(database, key), data);
+  const putData = (key, data) => set(ref(database, key), data);
 
   return (
     <FirebaseContext.Provider

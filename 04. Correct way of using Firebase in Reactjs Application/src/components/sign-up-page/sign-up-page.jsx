@@ -11,9 +11,9 @@ const SignUpPage = () => {
 
   const signUp = async () => {
     try {
-      const res = await firebase.signUpUserWithEmailAndPassword(email, password);
-      console.log(res);
-      console.log("Signed up Successfully");
+      await firebase.signUpUserWithEmailAndPassword(email, password);
+      const sanitizedEmail = email.replace(/\./g, ','); // Replacing dots with commas
+      await firebase.putData(`users/${sanitizedEmail}`, { email, password });
     } catch (error) {
       console.log(error.code);
       console.log(error.message);
