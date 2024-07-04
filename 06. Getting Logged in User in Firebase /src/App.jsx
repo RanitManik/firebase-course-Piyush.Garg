@@ -21,7 +21,7 @@ const App = () => {
     <div className="App">
       <h1>Firebase React App</h1>
       <div className="container logged-in">
-        <h2>Hello, {user.displayName ? user.displayName : user.email}</h2>
+        <h2>Hello, {user.email}</h2>
         <button onClick={handleSignOut}>Log out</button>
       </div>
     </div>
